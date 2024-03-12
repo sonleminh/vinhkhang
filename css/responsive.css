@@ -1,0 +1,206 @@
+@media (max-width: 639px) {
+  .container {
+    width: 85% !important;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .mobile-btn {
+    display: block !important;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .logo-mobile {
+    font-size: 24px;
+    font-weight: bold;
+    color: #80b9ff;
+  }
+
+  .banner {
+    height: 400px;
+  }
+
+  .banner-content {
+    width: 100%;
+  }
+
+  .banner-img {
+    display: none;
+  }
+
+  .banner-name {
+    font-size: 28px;
+  }
+
+  .banner-introduce {
+    font-size: 20px;
+  }
+
+  .contact-me-img {
+    display: none;
+  }
+
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-info-heading {
+    font-size: 28px;
+  }
+
+  .about-img {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-heading {
+    font-size: 30px;
+  }
+
+  .portfolio-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .service-carousel {
+    height: 180px;
+  }
+
+  .services-heading {
+    font-size: 28px;
+  }
+
+  .services-sub {
+    margin-bottom: 30px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card img {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+
+  .card-name {
+    font-size: 18px;
+  }
+
+  .card-desc {
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .contact-banner .container {
+    flex-direction: column;
+  }
+
+  .contact-banner .container > div {
+    width: 100%;
+  }
+
+  .contact-banner-heading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .contact-banner-btn {
+    width: 150px;
+    height: 45px;
+    margin-top: 20px;
+  }
+
+  .contact-banner-img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .testimonials-heading {
+    font-size: 28px;
+  }
+
+  .testimonials-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .testimonials-item-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .testimonials-stars i {
+    margin: 0 2px;
+  }
+
+  .contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-img {
+    display: none;
+  }
+
+  .contact-main {
+    padding: 30px;
+  }
+
+  .contact-info {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+  }
+
+  .contact-info > div {
+    margin-bottom: 10px;
+  }
+
+  .contact-my {
+    margin-bottom: 5px;
+  }
+
+  #contact-form button {
+    width: 100%;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  .footer-info,
+  .footer-services,
+  .footer-questions {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-contact {
+    margin-bottom: 20px;
+  }
+
+  .footer-socials-wrapper {
+    width: 100%;
+  }
+
+  .footer-socials {
+    justify-content: start;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .footer-copyright {
+    margin-top: 40px;
+  }
+}

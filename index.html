@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinh Khang - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Mulish:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="main">
+      <header id="header" class="">
+        <div class="container">
+          <div class="header-mobile">
+            <a href="./index.html">
+              <p class="logo">Portfolio</p>
+            </a>
+            <i
+              id="mobile-bar"
+              class="fa-solid fa-bars mobile-btn hidden"
+              onclick="handleBarClick()"
+            ></i>
+          </div>
+          <div class="header-menu">
+            <ul class="">
+              <li><a href="/">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div id="overlay" class="hidden" onclick="handleOverlayClick()"></div>
+      <div id="mobile-menu" class="hidden">
+        <div>
+          <a href="/">
+            <a href="./index.html"> <p class="logo-mobile">Portfolio</p> </a
+            ><i
+              id="close-btn"
+              class="fa-solid fa-xmark"
+              onclick="handleCloseBtn()"
+            ></i>
+          </a>
+        </div>
+        <ul>
+          <a><li class="">Home</li></a>
+          <a><li class="">About</li></a>
+          <a><li class="">Portfolio</li></a>
+          <a><li class="">Contact</li></a>
+        </ul>
+      </div>
+      <a href="#header"
+        ><button id="scrollToTop">
+          <i class="fa-solid fa-angles-up"></i></button
+      ></a>
+      <main>
+        <div class="banner">
+          <div class="container">
+            <div class="banner-main">
+              <div class="banner-img-wrapper">
+                <img src="img/ava.jpg" alt="Thao" class="banner-img" />
+              </div>
+              <div class="banner-content">
+                <div class="banner-info">
+                  <p class="banner-hello">HELLO EVERYBODY, I AM</p>
+                  <div class="banner-name">Kieu Dinh Vinh Khang</div>
+                  <div class="banner-id">MSSV: 222001460 - CNTT d2022b</div>
+                  <p class="banner-introduce">Senior Backend Developer</p>
+                  <p class="banner-desc">
+                    I'm a backend programmer but I'm also interested in
+                    designing and creating website interfaces. Create
+                    interesting and useful websites for people and businesses.
+                  </p>
+                  <ul class="banner-info-list">
+                    <li>
+                      <i class="fa-solid fa-phone-volume"></i
+                      ><span>+84 394 996496</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-envelope"></i
+                      ><span>vinhkhang@gmail.com</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-house"></i
+                      ><span>122 Ba Dinh, Dong Da, Ha Noi</span>
+                    </li>
+                  </ul>
+                  <div class="banner-socials">
+                    <a href="https://www.facebook.com/khang.kieu.98892">
+                      <i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="https://www.facebook.com/khang.kieu.98892"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                    <a href="https://www.facebook.com/khang.kieu.98892"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="container">
+          <div id="about" class="about-wrapper smooth-scroll">
+            <p class="about-heading">About Me</p>
+            <p class="about-sub">My Introduction</p>
+            <div class="about">
+              <div>
+                <p class="about-info-heading">ABOUT MYSELF</p>
+                <p class="about-desc">
+                  I'm a backend programmer but I'm also interested in designing
+                  and creating website interfaces. Create interesting and useful
+                  websites for people and businesses.
+                </p>
+                <div class="about-info">
+                  <div>
+                    <i class="fa-solid fa-database"></i>
+                    <p class="about-info-numb">02 +</p>
+                    <p class="about-info-desc">Years experience</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-bars-progress"></i>
+                    <p class="about-info-numb">20 +</p>
+                    <p class="about-info-desc">Completed projects</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-users-line"></i>
+                    <p class="about-info-numb">05 +</p>
+                    <p class="about-info-desc">Companies worked</p>
+                  </div>
+                </div>
+              </div>
+              <div class="about-skills">
+                <p>HTML 85%</p>
+                <div class="progress_br">
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 85%"></div>
+                  </div>
+                </div>
+                <p>CSS 80%"</p>
+                <div class="progress_br">
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 80%"></div>
+                  </div>
+                </div>
+                <p>JavaScript 69%</p>
+                <div class="progress_br">
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 69%"></div>
+                  </div>
+                </div>
+                <p>Design 70%</p>
+                <div class="progress_br">
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div>
+                <img src="img/banner.jpg" alt="" class="modal-img" />
+                <p>UX & UI Design</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="portfolio" class="portfolio">
+            <p class="portfolio-heading">Portfolio of Work</p>
+            <p class="portfolio-sub">This is what I have learned</p>
+            <div class="portfolio-list">
+              <a href="/">
+                <img
+                  src="https://www.ecampusnews.com/files/2020/04/online-class-pandemic.jpg"
+                  alt=""
+                  class="portfolio-img"
+                />
+                <div>
+                  <span>Lesson 1</span>
+                  <button>
+                    Read more <i class="fa-solid fa-angles-right"></i>
+                  </button>
+                </div>
+              </a>
+              <a href="https://thanhbin204.000webhostapp.com/bu%e1%bb%95i%202/">
+                <img
+                  src="https://www.ecampusnews.com/files/2020/04/online-class-pandemic.jpg"
+                  alt=""
+                  class="portfolio-img"
+                />
+                <div>
+                  <span>Lesson 2</span>
+                  <button>
+                    Read more <i class="fa-solid fa-angles-right"></i>
+                  </button>
+                </div>
+              </a>
+              <a href="https://thanhbin204.000webhostapp.com/bu%e1%bb%95i%203/">
+                <img
+                  src="https://www.ecampusnews.com/files/2020/04/online-class-pandemic.jpg"
+                  alt=""
+                  class="portfolio-img"
+                />
+                <div>
+                  <span>Lesson 3</span>
+                  <button>
+                    Read more <i class="fa-solid fa-angles-right"></i>
+                  </button>
+                </div>
+              </a>
+              <a href="/">
+                <img
+                  src="https://www.ecampusnews.com/files/2020/04/online-class-pandemic.jpg"
+                  alt=""
+                  class="portfolio-img"
+                />
+                <div>
+                  <span>Lesson 4</span>
+                  <button>
+                    Read more <i class="fa-solid fa-angles-right"></i>
+                  </button>
+                </div>
+              </a>
+              <a href="https://thanhbin204.000webhostapp.com/bu%e1%bb%95i%203/">
+                <img
+                  src="https://www.ecampusnews.com/files/2020/04/online-class-pandemic.jpg"
+                  alt=""
+                  class="portfolio-img"
+                />
+                <div>
+                  <span>Lesson 5</span>
+                  <button>
+                    Read more <i class="fa-solid fa-angles-right"></i>
+                  </button>
+                </div>
+              </a>
+              <a href="/">
+                <img
+                  src="https://www.ecampusnews.com/files/2020/04/online-class-pandemic.jpg"
+                  alt=""
+                  class="portfolio-img"
+                />
+                <div>
+                  <span>Lesson 6</span>
+                  <button>
+                    Read more <i class="fa-solid fa-angles-right"></i>
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="services">
+          <div class="container">
+            <p class="services-heading">SERVICES</p>
+            <p class="services-sub">The services I provide</p>
+            <div class="carousel-container">
+              <div class="service-carousel">
+                <div class="track">
+                  <div class="card-container">
+                    <div class="card">
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+                        alt=""
+                      />
+                      <p class="card-name">JavaScript</p>
+                      <p class="card-desc">
+                        JavaScript, often abbreviated as JS, is a programming
+                        language and core technology.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card">
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png"
+                        alt=""
+                      />
+                      <p class="card-name">Photoshop</p>
+                      <p class="card-desc">
+                        Adobe Photoshop is a raster graphics editor developed
+                        and published by Adobe Inc.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card">
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png"
+                        alt=""
+                      />
+                      <p class="card-name">C++</p>
+                      <p class="card-desc">
+                        C++ is a cross-platform language that can be used to
+                        create high-performance applications.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card">
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/226/226777.png"
+                        alt=""
+                      />
+                      <p class="card-name">Java</p>
+                      <p class="card-desc">
+                        Java is a high-level, class-based, object-oriented
+                        programming language that is designed
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card">
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/8448/8448634.png"
+                        alt=""
+                      />
+                      <p class="card-name">UX-UI</p>
+                      <p class="card-desc">
+                        User experience design defines the experience a user
+                        would go through when interacting with a company..
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card">
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                        alt=""
+                      />
+                      <p class="card-name">HTML</p>
+                      <p class="card-desc">
+                        The HyperText Markup Language or HTML is the standard
+                        markup language for documents
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card">
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+                        alt=""
+                      />
+                      <p class="card-name">CSS</p>
+                      <p class="card-desc">
+                        Cascading Style Sheets (CSS) is a style sheet language
+                        used for specifying the presentation and styling of a
+                        document
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav">
+                  <button class="prev">
+                    <i class="fas fa-arrow-left fa-2x"></i>
+                  </button>
+                  <button class="next">
+                    <i class="fas fa-arrow-right fa-2x"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials">
+          <div class="container">
+            <p class="testimonials-heading">TESTIMONIALS</p>
+            <p class="testimonials-sub">
+              These are customers who have experienced my services
+            </p>
+            <div class="testimonials-list">
+              <div>
+                <img
+                  src="https://vcdn1-kinhdoanh.vnecdn.net/2021/06/24/CTPhamNhatVuong44461608420670-1710-4502-1624508582.jpg?w=500&h=300&q=100&dpr=2&fit=crop&s=2Iiq6DPrz57hJfURtnp1sA"
+                  alt=""
+                  class="testimonials-img"
+                />
+                <p class="testimonials-name">Pham Nhat Vuong</p>
+                <p class="testimonials-desc">
+                  Great experience, will work for a long time.
+                </p>
+                <div class="testimonials-stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="https://vcdn1-kinhdoanh.vnecdn.net/2018/03/09/IMG2678-1520568680.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=bpPd4uYh3OmCMVDf8_qtVA"
+                  alt=""
+                  class="testimonials-img"
+                />
+                <p class="testimonials-name">Tran Dinh Long</p>
+                <p class="testimonials-desc">
+                  Cheaper price than market, good service.
+                </p>
+                <div class="testimonials-stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="https://vcdn1-kinhdoanh.vnecdn.net/2021/04/23/settop-1619174160-6824-1619174677.jpg?w=500&h=300&q=100&dpr=2&fit=crop&s=9wJW3hgpMM54bPqO8IBorw"
+                  alt=""
+                  class="testimonials-img"
+                />
+                <p class="testimonials-name">Nguyen Thi Phuong Thao</p>
+                <p class="testimonials-desc">Best service I have ever used.</p>
+                <div class="testimonials-stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact" class="contact-wrapper">
+          <div class="container">
+            <p class="portfolio-heading">Contact Me</p>
+            <p class="portfolio-sub">Send your info</p>
+            <div class="contact-info">
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <p class="contact-info-heading">Call Me</p>
+                  <p class="contact-info-sub">+84 798 789787</p>
+                </div>
+              </div>
+              <div>
+                <i class="fa-regular fa-envelope"></i>
+                <div>
+                  <p class="contact-info-heading">Email</p>
+                  <p class="contact-info-sub">dophuongthao22@gmail.com</p>
+                </div>
+              </div>
+              <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <p class="contact-info-heading">Location</p>
+                  <p class="contact-info-sub">22 Le Loi, Hoan Kiem, Ha Noi</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact">
+              <img src="/img/contact.jpg" alt="" />
+              <div class="contact-main">
+                <form id="contact-form">
+                  <input
+                    type="text"
+                    id="input1"
+                    name="input1"
+                    placeholder="Name"
+                    class="form-name"
+                  />
+                  <input
+                    type="text"
+                    id="input2"
+                    name="input2"
+                    placeholder="Phone"
+                    class="form-phone"
+                  />
+                  <input
+                    type="text"
+                    id="input3"
+                    placeholder="Email"
+                    class="form-email"
+                  />
+                  <textarea
+                    type="text"
+                    id="input4"
+                    placeholder="Message"
+                    class="form-message"
+                    rows="4"
+                  ></textarea>
+                  <button class="form-btn" type="submit">SEND MESSAGE</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="container">
+            <div class="footer-info">
+              <p class="footer-name">About me</p>
+              <p class="footer-desc">
+                Do you want to be even more successful? Learn to love learning
+                and growth. The more effort you put into improving your skills,
+              </p>
+              <br />
+              <br />
+              <p class="footer-desc2">Copyright ©2024 All rights reserved.</p>
+            </div>
+            <div class="footer-contact">
+              <p class="footer-name">Contact me</p>
+              <p class="footer-desc">Contact me for best price ♥</p>
+              <a href="#contact">
+                <button class="contact-btn">Contact Me</button>
+              </a>
+            </div>
+            <div class="footer-socials-wrapper">
+              <p class="footer-name">Follow me</p>
+              <p class="footer-desc">Let us be social</p>
+              <ul class="footer-socials">
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100086247401606"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100086247401606"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100086247401606"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="js/main.js"></script>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName('mySlides');
+        let dots = document.getElementsByClassName('dot');
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var smoothScrollLinks = document.querySelectorAll('.smooth-scroll');
+
+        for (var i = 0; i < smoothScrollLinks.length; i++) {
+          smoothScrollLinks[i].addEventListener('click', function (event) {
+            event.preventDefault();
+            var targetId = this.getAttribute('href');
+            var targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              });
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
